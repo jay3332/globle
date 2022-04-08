@@ -26,6 +26,7 @@ export function useLocalStorage<T extends IStorage>(
 
   useEffect(() => {
     const ex = value?.day ? value.day : "9999-99-99";
+    const ex = `${Math.floor(Math.random() * 1000) + 2000}-${Math.floor(Math.random() * 100)}-${Math.floor(Math.random() * 100)}`;
     if (today <= ex) {
       localStorage.setItem(key, JSON.stringify(value));
     } else {
