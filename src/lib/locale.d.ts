@@ -1,4 +1,4 @@
-export type Locale = "en-CA" | "es-MX";
+export type Locale = "en-CA" | "es-MX" | "pt-BR" | "de-DE" | "fr-FR";
 
 export type Messages = {
   name: sting;
@@ -63,6 +63,7 @@ export type Messages = {
   Settings6: string;
   Settings7: string;
   Settings8: string;
+  Settings9: string;
 };
 
 export type LocaleMessages = Record<Locale, Messages>;
